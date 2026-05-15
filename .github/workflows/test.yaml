@@ -4,7 +4,7 @@ on: workflow_dispatch
 
 jobs:
   test:
-    # где заускаем
+    # где запускаем
     runs-on: ubuntu-latest
     # что делаем
     steps:
@@ -15,6 +15,10 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: '17'
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+      - name: Build with Gradle
+        run: ./gradlew build
       - uses: Xotabu4/selenoid-github-action@v2
       # запускаем тесты
       - run: ./gradlew clean test -Dselenide.remote=http://localhost:4444/wd/hub
