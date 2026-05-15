@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","7154","testLambdaStep()","","Fri May 15 15:11:13 UTC 2026","passed","Fri May 15 15:11:20 UTC 2026","","LambdaStepsTest","LambdaStepsTest","testLambdaStep"
+"","14749","testAnnotatedStep()","","Fri May 15 15:10:58 UTC 2026","passed","Fri May 15 15:11:13 UTC 2026","","AnnotatedStepsTest","AnnotatedStepsTest","testAnnotatedStep"
+"","7548","testIssueSearchWithAllure()","","Fri May 15 15:11:20 UTC 2026","passed","Fri May 15 15:11:27 UTC 2026","","SelenideTest","SelenideTest","testIssueSearchWithAllure"
