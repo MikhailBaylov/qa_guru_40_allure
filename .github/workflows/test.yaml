@@ -38,7 +38,7 @@ jobs:
       # публикуем отчет
       - uses: peaceiris/actions-gh-pages@v2
         if: always()
-        env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+        with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}  # не env, а with
+                publish_branch: gh-pages
+                publish_dir: ./allure-history
